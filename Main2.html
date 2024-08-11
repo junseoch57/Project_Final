@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Main Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/3a3eeac74a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Main2.css">
+</head>
+<body class="page-content">
+  <div class="navbar">
+    <div class="logo">PALI</div>
+    <div class="menu">
+      <ul>
+        <li><a href="Main2.html" class="link">HOME</a></li>
+        <li><a href="#top3-page" class="link">TOP3</a></li>
+        <li><a href="trip-tip.html" class="link">TIP</a></li>
+        <li><a href="#" class="link" id="loginplz">My List</a></li>
+        <li><a href="index.html" class="logout-button">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="main-top">
+        <div class="main-text">
+            여행과 함께하는 나만의 체크리스트
+        </div>
+        <div class="main-img" id="imageSection">
+            <img src="https://github.com/user-attachments/assets/cf63b7ac-8880-4c25-8791-7ca81fac38f1"  alt="메인 이미지">
+            <div class="overlay">
+                <div class="overlay-text top-text">
+                    PALI와 함께
+                </div>
+                <div class="overlay-text bottom-text">
+                    효율적으로 여행을 준비해보세요
+                </div>
+                <a href="trip_type.html" class="start-button">시작하기</a>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="additional-content">
+            <h2 class="secondText">#PALI는?</h2>
+            <div class="section2box">
+                <div class="image-container">
+                    <div class="image-item">
+                        <img width="120" alt="1" src="https://github.com/user-attachments/assets/263e8fb3-c4df-4cf2-b0d1-f5c88010cb92">
+                        <p class="image-description">사용자 중심의 간편한 <br>여행 준비 지원</p>
+                    </div>
+                    <div class="image-item">
+                        <img width="120" alt="2" src="https://github.com/user-attachments/assets/d5eed6f0-fb5a-422c-8f96-80da1a527bd0">
+                        <p class="image-description">개인 맞춤형<br>서비스</p>
+                    </div>
+                    <div class="image-item">
+                        <img width="120" alt="3" src="https://github.com/user-attachments/assets/17bc1007-3944-4904-8103-3767cb20a4ce">
+                        <p class="image-description">효율적인<br>여행 준비물 관리</p>
+                    </div>
+                </div>
+            </div>
+            <div class="withAddText">
+                간단하고 직관적인 인터페이스를 통해 사용자들이 손쉽게 여행 준비물을 작성하고 관리할 수 있습니다. <br> 
+                자동으로 생성되는 기본 체크리스트를 제공하여 편리하게 사용할 수 있으며 여행 기간, 목적지, <br>활동 계획 등
+                다양한 정보를 입력받아 각 사용자에게 맞춤형 체크리스트를 제공합니다. 
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <section id="cardType" class="card_wrap nexon section">
+            <section class="title-box">
+              <h2 class="title content">
+                <span class="letter">다들 어디 가?</span>
+              </h2>
+              <p>여행지 고민 걱정 마세요! 사람들이 자주 가는 곳을 알려 드릴게요.</p>
+            </section>
+      
+            <!-- 해외 여행지 -->
+            <h5 class="nation" id="top3-page">해외 TOP 3</h5>
+            <div class="card_inner container">
+              <article class="card">
+                <figure class="card_header">
+                  <img
+                    src="https://images.pexels.com/photos/4058530/pexels-photo-4058530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    lat="도쿄"
+                  />
+                </figure>
+                <div class="card_body">
+                  <h3 class="tit">
+                    도쿄 <h8 style="color: grey; font-size: 1.2rem">Tokyo</h8>
+                  </h3>
+                  <hr />
+                  <p class="desc">
+                    밤낮으로 활기를 띈 거리와 세계적인 랜드마크가 독보적인 도시예요.
+                  </p>
+                  <a
+                    class="brn"
+                    href="https://travel.naver.com/overseas/JPTYO298184/city/summary"
+                  >
+                    <p class="seeMore">
+                    더 자세히 보기
+                    </p>
+                  </a>
+                </div>
+              </article>
+              <article class="card">
+                <figure class="card_header">
+                  <img
+                    src="https://media.istockphoto.com/id/1477016740/ko/%EC%82%AC%EC%A7%84/%EC%99%93-%EC%95%84%EB%A3%AC-%EC%82%AC%EC%9B%90-%ED%83%9C%EA%B5%AD%EC%97%90%EC%84%9C-%EC%9D%BC%EB%AA%B0-%EB%8F%99%EC%95%88-%EB%B0%A9%EC%BD%95.webp?b=1&s=170667a&w=0&k=20&c=QWC39ijI8cn7MbpHP8eA3p3Rp4r9i1RHvPYjHVprYd4="
+                    alt="방콕"
+                  />
+                </figure>
+                <div class="card_body">
+                  <h3 class="tit">
+                    방콕 <h8 style="color: grey; font-size: 1.2rem">Bangkok</h8>
+                  </h3>
+                  <hr />
+                  <p class="desc">
+                    화려하고 웅장한 역사적 명소와 빛나는 밤의 거리가 조화로운
+                    도시예요.
+                  </p>
+                  <a
+                    class="brn"
+                    href="https://travel.naver.com/overseas/THBKK293916/city/summary"
+                  >
+                  <p class="seeMore">
+                    더 자세히 보기
+                    </p>
+                  </a>
+                </div>
+              </article>
+              <article class="card">
+                <figure class="card_header">
+                  <img
+                    src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202009/28/0602b5dc-e641-4246-a0c0-8ca1c41b9d20.jpg"
+                    alt="다낭"
+                  />
+                </figure>
+                <div class="card_body">
+                  <h3 class="tit">
+                    다낭 <h8 style="color: grey; font-size: 1.2rem">Da nang</h8>
+                  </h3>
+                  <hr />
+                  <p class="desc">
+                    끝없는 백사장과 현대적인 관광 명소가 어우러져 매력적인 해안
+                    도시예요.
+                  </p>
+                  <a
+                    class="brn"
+                    href="https://travel.naver.com/overseas/VNDAD298085/city/summary"
+                  >
+                  <p class="seeMore">
+                    더 자세히 보기
+                  </p>
+                  </a>
+                </div>
+              </article>
+            </div>
+      
+            <!-- 국내 여행지-->
+            <h5 class="nation">국내 TOP 3</h5>
+            <div class="card_inner container">
+              <article class="card">
+                <figure class="card_header">
+                  <img
+                    src="https://file.mk.co.kr/meet/neds/2021/03/image_readtop_2021_230365_16153626904568253.jpg"
+                    lat="제주도"
+                  />
+                </figure>
+                <div class="card_body">
+                  <h3 class="tit">
+                    제주도 <h8 style="color: grey; font-size: 1.2rem">Jejudo</h8>
+                  </h3>
+                  <hr />
+                  <p class="desc">
+                    끝없이 이어진 수평선과 이에 상응하는 숲으로 많은 사랑을 받고 있는
+                    대표적인 섬이에요.
+                  </p>
+                  <a
+                    class="brn"
+                    href="https://travel.naver.com/domestic/14/summary?seasonIndex=1"
+                  >
+                    <p class="seeMore">
+                        더 자세히 보기
+                      </p>
+                  </a>
+                </div>
+              </article>
+              <article class="card">
+                <figure class="card_header">
+                  <img
+                    src="https://img.freepik.com/free-photo/seoul-tower-with-gyeongbokgung-roof-and-red-autumn-maple-leaves-at-namsan-mountain-in-south-korea_335224-419.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722470400&semt=ais_hybrid"
+                    alt="서울"
+                  />
+                </figure>
+                <div class="card_body">
+                  <h3 class="tit">
+                    서울 <h8 style="color: grey; font-size: 1.2rem">Seoul</h8>
+                  </h3>
+                  <hr />
+                  <p class="desc">
+                    역동적인 도시 생활과 역사적 명소가 조화를 이루어 눈 쉴 틈이 없는
+                    한국의 중심 도시예요.
+                  </p>
+                  <a
+                    class="brn"
+                    href="https://travel.naver.com/domestic/09/summary?seasonIndex=1"
+                  >
+                  <p class="seeMore">
+                    더 자세히 보기
+                  </p>
+                  </a>
+                </div>
+              </article>
+              <article class="card">
+                <figure class="card_header">
+                  <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20230322/pngtree-busan-marina-with-yachts-photo-image_2096000.jpg"
+                    alt="부산"
+                  />
+                </figure>
+                <div class="card_body">
+                  <h3 class="tit">
+                    부산 <h8 style="color: grey; font-size: 1.2rem">Busan</h8>
+                  </h3>
+                  <hr />
+                  <p class="desc">
+                    아름다운 해변과 활기 넘치는 항구로 많은 사람의 발걸음을 잡는
+                    매력적인 항구 도시예요.
+                  </p>
+                  <a
+                    class="brn"
+                    href="https://travel.naver.com/domestic/08/summary?seasonIndex=1"
+                  >
+                  <p class="seeMore">
+                    더 자세히 보기
+                  </p>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </section>
+          
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="Main2.js"></script>
+
+</body>
+
+</html>

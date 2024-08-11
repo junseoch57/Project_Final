@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'SUITE-Regular',sans-serif;
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+} /* 공통 폰트 적용 */
+
+body {
+    margin: 0;
+    background-color: #c7ebf3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'SUITE-Regular',sans-serif;
+}
+
+.container {
+    background-color: white;
+    min-height: 100vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 24px; 
+    margin: 10px auto; 
+    max-width: 960px;
+    /* 메인 컨테이너 */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 78px;
+    padding: 10px 140px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+  
+.logo {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.menu {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+  
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 48px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 8px; 
+    position: relative;
+}
+  
+.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 3px;
+    background-color: #122855;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.6s ease;
+}
+  
+.link:hover::before {
+    transform: scaleX(1);
+}
+  
+.navbar .menu a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+  
+.logout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background-color: #122855; 
+    color: white !important;
+    text-decoration: none; 
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 10px;
+}
+  
+.logout-button:hover {
+    background-color: #091328;
+}
+
+h1 {
+    font-size: 40px; 
+    color: black;
+    margin-bottom: 32px; 
+    padding-left: 165px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    /* 필수품, 의류, 미용, 전자기기, 출력물, 기타 */
+}
+
+.checklist-section {
+    margin-bottom: 32px; 
+    padding-left: 32px; 
+    /* 체크리스트 섹션 스타일 */
+}
+
+.item-input {
+    display: flex;
+    margin-bottom: 16px; 
+    /* 항목 추가 input */
+}
+
+.form-control {
+    display: flex;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.btn-add {
+    background-color: #2a4eef; 
+    color: white; 
+    border: none;
+    padding: 8px 12px; 
+    border-radius: 10%; 
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    /* 항목 추가 + 버튼 */
+}
+
+.btn-add:hover { 
+    background-color: #24449d;
+    color: white;
+    /* + 버튼 hover */
+}
+
+.list-group {
+    font-size: 19px;
+    font-weight: 400;
+    /* 체크리스트 그룹 스타일 */
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    /* 체크리스트 항목 그룹 */
+}
+
+.checkbox{
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+    /* 체크박스  */
+}
+
+.category-box {
+    background-color: #d1dbe4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    vertical-align: top; 
+    /* 카테고리 박스  - 산 여행, 바다 여행 */
+}
+
+#mountain-box {
+    margin-top: 120px; 
+    /* 산 여행 카테고리 박스 위치 조정 */
+}
+
+#sea-box {
+    margin-top: 30px; 
+    /* 바다 여행 카테고리 박스 위치 조정 */
+}
+
+.category-title {
+    font-size: 20px; 
+    font-weight: bold;
+    /* 카테고리 디자인 */
+}
+
+.tip-icon{
+    width: 32px;
+    height: 32px;
+    /* tip 아이콘 */
+}
+
+.tips-container {  
+    position: fixed;
+    top: 115px;
+    left: 25px;
+    width: 210px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 13px; 
+    margin-left: 35px;
+    /* 짐 싸기 팁  */
+}
+
+.tips-container h2 {
+    font-size: 20px; 
+    color: #333;
+    margin-bottom: 16px; 
+    font-weight: 600;
+    /* 짐 싸기 팁 내용 */
+}
+
+.tips-container ul {
+    list-style: none; /* 리스트 없음 */
+    padding-left: 0;
+}
+
+.tips-container li {
+    margin-bottom: 17px;
+    font-size: 18px;
+    /* 짐 싸기 tip 내용 */
+}
+
+#checked-list-id {  
+    position: fixed;
+    top: 320px;
+    left: 25px; 
+    width: 210px;
+    background-color: #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px; 
+    font-size: 20px;
+    color : white;
+    margin-left: 35px;
+    margin-top: 108px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* 체크한 리스트 보기 버튼 */
+}
+
+#checked-list-id:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    /* hover 효과 */
+}
+
+#checked-list-id:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* 클릭 효과 */
+}
+
+#checked-list-close{
+    color : rgb(128, 191, 210);
+    /* 체크한 리스트 modal 닫기 버튼 */
+}
+
+.checked-list-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 24px; 
+    z-index: 1000;
+    width: 80%;  
+    max-width: 300px;  
+    max-height: 90vh;
+    overflow-y: auto; 
+    /* 모달 스타일 */
+}
+
+.checked-list-modal h2 {
+    font-size: 27px; 
+    color: #333;
+    margin-bottom: 16px; 
+}
+
+.checked-list-modal ul {
+    font-size: 20px;
+    margin-left: 8px;
+    padding-left: 0;
+}
+
+.checked-list-modal li {
+    margin-bottom: 8px; 
+}
+
+.checked-list-modal button {
+    margin-top: 16px; 
+}
+
+.close-button {
+    font-size: 15px;
+}
+
+
+.info-icon {
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px; 
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    /* info 아이콘 */
+}
+
+.info-text {
+    display: none;
+    position: absolute;
+    left: calc(100% + 10px); /* 텍스트 오른쪽에 표시 */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #7281e2;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    white-space: nowrap;
+    /* 추가 정보 텍스트  */
+}
+
+.info-icon-container {
+    position: relative;
+}
+
+.info-icon-container.active .info-text {
+    display: block;
+    /* 아이콘 클릭  정보 텍스트  */
+}

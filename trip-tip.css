@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+} /* 공통 폰트 적용 */
+
+body{
+  font-family: 'SUITE-Regular', sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 78px;
+  padding: 10px 140px;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.5rem;
+  position: relative;
+  color: #424242;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 3px;
+  background-color: #122855;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.6s ease;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
+.navbar .menu a {
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+/*로그아웃 버튼*/
+.logout-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  color: #122855;
+  text-decoration: none; 
+  padding: 15px 10px;;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 2px solid #122855; /* 첫 번째 테두리 */
+}
+
+
+.logout-button:hover {
+  background-color:  #00000012;
+}
+
+/* all content */
+
+.section1{
+    background-color: #3760cf;
+    color: white;
+    padding: 40px 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 0;
+}
+
+
+/* title animation */
+:root {
+  --headingSize: 75px;
+  --background-color: black;
+}
+
+
+
+h1 {
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 190px;
+  letter-spacing: -1px;
+  font-size: var(--headingSize);
+}
+
+h1 span {
+  display: inline-block;
+  overflow: hidden;
+  animation: 0.3s swift-up ease-in-out forwards;
+}
+.small-text{
+  font-weight: 200;
+  color: #fffffff5;
+  margin-top: 5px;
+  letter-spacing: -1px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.small-text-bottom{
+  margin-bottom: 150px;
+}
+
+i {
+  font-style: normal;
+  position: relative;
+  top: var(--headingSize);
+  animation: 0.5s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+  to {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .title-container {
+    width: auto;
+    margin: 0 10%;
+  }
+
+  :root {
+    --headingSize: 35px;
+  }
+}
+
+/* tip item container */
+
+.section2{
+  margin: 0;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 40px 20px; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleText {
+  margin-top: 60px;
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%; 
+  margin-left: 160px;
+}
+.tip-item {
+  display: flex;
+  margin-bottom: 4rem;
+  padding-left: 170px;
+  padding-right: 150px;
+}
+
+/* image styling */
+.Image {
+  width: 25rem;
+  height: 15rem;
+  margin-right: 2rem;
+  object-fit: cover;
+}
+
+/* text content */
+.tip-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: calc(100%-25rem);
+}
+.tip-title {
+  text-decoration: grey underline 0.15rem;
+  text-underline-offset: 0.5rem;
+  font-weight: bold;
+  color: rgb(32, 32, 32);
+  font-size: 1.4rem;
+}
+
+.add-explain {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: gray;
+  margin-bottom: 0px;
+}
+
+.add-explain{
+  margin-top: 10px;
+}
+.tip-content {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #424242;
+}
+.top-text{
+  margin-bottom: 10px;
+}
