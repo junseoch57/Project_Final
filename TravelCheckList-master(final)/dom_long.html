@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짐 체크 리스트</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="dom_long.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">PALI</div>
+        <div class="menu">
+          <ul>
+            <li><a href="Main2.html" class="link">HOME</a></li>
+            <li><a href="trip-tip.html" class="link">TIP</a></li>
+            <li><a href="#" class="link" id="loginplz">My List</a></li>
+            <li><a href="index.html" class="logout-button">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="tips-container">
+        <h2>짐싸기 tip <img class="tip-icon" src="images/tips.png"> </h2>
+        <ul>
+            <li>압축팩 사용하기</li>
+            <li>샘플 화장품 사용하기</li>
+            <li>옷은 돌돌 말아 부피 줄이기</li>
+            <li>각종 선은 고무줄, 안경케이스 활용하기</li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <button id="checked-list-id" class="btn btn-primary">체크한 리스트 보기</button>
+
+    <div class="container d-flex">
+        <div class="flex-grow-1">
+            <h1 class="text-center">장기 국내여행 CheckList</h1>
+
+            <div class="checklist-section" data-list="clothes-list">
+                <div class="section-title">의류</div>
+                <div class="item-input">
+                    <input type="text" class="form-control" placeholder="항목 추가">
+                    <button class="btn-add" data-list="clothes-list">+</button>
+                </div>
+                <ul class="list-group" id="clothes-list"></ul>
+            </div>
+
+            <div class="checklist-section" data-list="beauty-list">
+                <div class="section-title">미용</div>
+                <div class="item-input">
+                    <input type="text" class="form-control" placeholder="항목 추가">
+                    <button class="btn-add" data-list="beauty-list">+</button>
+                </div>
+                <ul class="list-group" id="beauty-list"></ul>
+            </div>
+
+            <div class="checklist-section" data-list="electro-list">
+                <div class="section-title">전자기기</div>
+                <div class="item-input">
+                    <input type="text" class="form-control" placeholder="항목 추가">
+                    <button class="btn-add" data-list="electro-list">+</button>
+                </div>
+                <ul class="list-group" id="electro-list"></ul>
+            </div>
+
+            <div class="checklist-section" data-list="others-list">
+                <div class="section-title">기타</div>
+                <div class="item-input">
+                    <input type="text" class="form-control" placeholder="항목 추가">
+                    <button class="btn-add" data-list="others-list">+</button>
+                </div>
+                <ul class="list-group" id="others-list"></ul>
+            </div>
+        </div>
+
+        <div class="flex-shrink-0 ms-3" style="width: 200px;">
+            <div class="category-box" id="mountain-box">
+                <div class="category-title">산 여행</div>
+                <ul class="list-group mt-2 d-none" id="mountain-list">
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 등산화</li>
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 등산복</li>
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 등산용 배낭</li>
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 등산 스틱</li>
+                </ul>
+            </div> 
+            <div class="category-box" id="sea-box">
+                <div class="category-title">바다 여행</div>
+                <ul class="list-group mt-2 d-none" id="sea-list">
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 수영복</li>
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 비치 타월</li>
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 수경</li>
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 스노클링 장비</li>
+                    <li class="list-group-item"><input class="checkbox" type="checkbox" value=""> 방수팩</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+
+    <div class="checked-list-modal">
+        <h2>체크한 리스트</h2>
+        <ul id="checked-items-list"></ul>
+        <button class="close-button btn btn-secondary">닫기</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="dom_long.js"></script>
+</body>
+</html>
